@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - What to do?">
+		<meta name="keywords" content="happy hour, sport">
+
+		<title>Happy Hour</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+			// Our activities list
+			var activities = [
+				'Swim',
+				'learn English',
+				'play an instrument',
+				'sing',
+				'dance',
+				'pray'
+			];
+
+			// Our List of Friends
+			var friends = [
+				'Jhon',
+				'Juanita',
+				'Andres',
+				'Lina',
+				'your girlfriend',
+				'your boyfriend'
+			];
+
+			var randomNumber = Math.floor(Math.random()*activities.length);
+			
+			var activity_name = activities[randomNumber];
+			var friendname = friends[randomNumber];
+
+			document.write("How about you go to <strong>" + activity_name + "</strong> with <strong>" + friendname + "</strong>?");
+		
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
+</html>
