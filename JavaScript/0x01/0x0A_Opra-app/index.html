@@ -2,9 +2,7 @@
 <html>
 	<head>
 		<title>Oprah Likes You. And so do other people.</title>
-
 		<style>
-			
 			/* Basic CSS comment */	
 			body {
 				background: #BBB;
@@ -22,24 +20,19 @@
 
 		<script>
 			var user = prompt("Whats your name?");
-			var car = new Array("BMW", "Audi", "Mercedez");
+			var car = new Array("BMW", "Audi", "Mercedez", "Ford", "Mini cooper");
 			console.log(car);
 			
-			if(user === "Chris") {
-				document.write("<h1>Hello " + user + ", you won a "+ car[1]);
+			if(user === "Chris" || user === "Jorge") {
+        var randomNumber = Math.floor(Math.random() * car.length);
+				document.write("<h1>Hello " + user + ", you won a "+ car[randomNumber]);
 			} 
 			else {
 				document.write("<h1>Hello " + user + "!</h1>");
 			}
-			
-
 		</script>
-
-
 	</head>
- 	
 	<body>
 
   </body>
-
 </html>
